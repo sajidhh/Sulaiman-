@@ -1,0 +1,6 @@
+{
+  "name": "A Little Surprise for Saltanat",
+  "description": "A handcrafted interactive digital postcard and playful quiz for Saltanat from Sohan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-paper: #FAF5F5;
+  --color-surface: #F8EDF1;
+  --color-surface-raised: #FFFFFF;
+  --color-primary: #D44A74;
+  --color-primary-hover: #B83660;
+  --color-ink: #321622;
+  --color-muted: #7E5868;
+  --color-border: #E8D2DB;
+  --color-accent: #E85D87;
+}
+
+:root {
+  --paper-pattern: radial-gradient(rgba(212, 74, 116, 0.04) 1px, transparent 1px);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  min-height: 100vh;
+  margin: 0;
+  background-image: var(--paper-pattern);
+  background-size: 20px 20px;
+}
+
+/* Subtle postcard postage stamp border pattern */
+.postage-stamp-border {
+  background: radial-gradient(circle at 10px 10px, transparent 6px, #FFFFFF 6px);
+  background-size: 20px 20px;
+}
+
+/* Custom scrollbar for clean editorial look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8D2DB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D44A74;
+}
